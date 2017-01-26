@@ -6,4 +6,4 @@ from django.http import HttpResponse
 
 
 def test(request):
-    return render(request, 'Base.html')
+    return render(request, 'index.html')
