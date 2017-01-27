@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1da4df0-cdea-4bcf-b484-b6b3a96aba8d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/src/Home/Home/static/images/logo.png" afterPath="$PROJECT_DIR$/source/src/Home/Home/static/images/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/src/Home/Home/static/images/logo1.png" afterPath="$PROJECT_DIR$/source/src/Home/Home/static/images/logo1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/src/Home/Home/templates/index.html" afterPath="$PROJECT_DIR$/source/src/Home/Home/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +22,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/src/Home/Home/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2826">
-              <caret line="157" column="0" lean-forward="true" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+            <state relative-caret-position="648">
+              <caret line="201" column="107" lean-forward="false" selection-start-line="201" selection-start-column="107" selection-end-line="201" selection-end-column="107" />
               <folding />
             </state>
           </provider>
@@ -467,8 +469,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/src/Home/Home/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2826">
-          <caret line="157" column="0" lean-forward="true" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+        <state relative-caret-position="648">
+          <caret line="201" column="107" lean-forward="false" selection-start-line="201" selection-start-column="107" selection-end-line="201" selection-end-column="107" />
           <folding />
         </state>
       </provider>
