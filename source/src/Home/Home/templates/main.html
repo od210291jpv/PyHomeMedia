@@ -4,12 +4,21 @@
 {% block content %}
 	<div class="content_bg">
 			<div class="main_pic">
-				<a class="btn" href="#" > Track name 1</a>
+				{% for track in tracks %}
+				<!--<a class="btn" href="#" > Track name 1</a>-->
 				<hr>
-				<a class="btn" href="#" > Track name 2 </a>
+				<audio controls="controls">
+					<source src="{{ track.path.url }}">
+				</audio>
+				<!--<a class="btn" > {{ track.name }}-->
+				<!--<audio controls>-->
+  					<!--<source src="{{ track.path.url }}", type="audio/mpeg">-->
+				<!--</audio>-->
+				<!--</a>-->
+			{% endfor %}
 			</div>
 		</div>
-		 start tabs_style
+
 		<section class="tabs">
 	            <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
 		        <label for="tab-1" class="tab-label-1">Info</label>
