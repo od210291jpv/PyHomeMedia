@@ -20,4 +20,5 @@ from .settings import MEDIA_ROOT, DEBUG
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'Home.Application.views.test', name='test'),
+    url(r'^home/$', 'Home.Application.views.home', name='home'),
 ]
