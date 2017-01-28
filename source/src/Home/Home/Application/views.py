@@ -12,4 +12,4 @@ def test(request):
 
 def home(request):
     tracks = AudioFile.objects.all()
-    return render(request, 'Base.html', {'tracks': tracks, 'portal_url': PORTAL_URL})
+    return render(request, 'main.html', {'tracks': tracks, 'portal_url': PORTAL_URL})

@@ -7,9 +7,12 @@
 				{% for track in tracks %}
 				<!--<a class="btn" href="#" > Track name 1</a>-->
 				<hr>
+				<a class='btn'>
+				{{ track.name }}
 				<audio controls="controls">
 					<source src="{{ track.path.url }}">
 				</audio>
+				</a>
 				<!--<a class="btn" > {{ track.name }}-->
 				<!--<audio controls>-->
   					<!--<source src="{{ track.path.url }}", type="audio/mpeg">-->
