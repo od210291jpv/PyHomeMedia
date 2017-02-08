@@ -7,9 +7,13 @@ from Home.settings import PORTAL_URL
 # Create your views here.
 
 
-def test(request):
+def index(request):
     return render(request, 'index.html')
 
 def home(request):
     tracks = AudioFile.objects.all()
     return render(request, 'main.html', {'tracks': tracks, 'portal_url': PORTAL_URL})
+
+def test(request):
+    tracks = AudioFile.objects.all()
+    return render(request, 'Base.html', {'tracks': tracks, 'portal_url': PORTAL_URL})
