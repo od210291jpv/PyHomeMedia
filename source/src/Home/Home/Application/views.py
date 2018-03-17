@@ -8,7 +8,7 @@ from Home.settings import PORTAL_URL
 
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'index_new.html')
 
 def home(request):
     tracks = AudioFile.objects.all()
