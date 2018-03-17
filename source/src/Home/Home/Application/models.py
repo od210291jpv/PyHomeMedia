@@ -51,6 +51,8 @@ class AudioFile(models.Model):
         song = models.ManyToManyField('AudioFile',
             null=True,
             blank=True,
-            verbose_name=u'Song name',
+            verbose_name=u'Song name'
+                                      )
 
-                                    )
+        def __unicode__(self):
+            return u'%s %s' % (self.name, self.song)
