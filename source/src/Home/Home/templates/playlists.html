@@ -3,7 +3,7 @@
 
 {% block content %}
             {% for playlist in playlists %}
-                <a href='{% url "showplaylist" playlist.id %}'><b>{{ playlist.name }}</b></a>
+                <a href='{{ PORTAL_URL }}{{playlist.id}}/view'><b>{{ playlist.name }}</b></a>
                 <hr>
 			{% endfor %}
 {% endblock content %}
