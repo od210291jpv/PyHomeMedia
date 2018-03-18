@@ -10,8 +10,8 @@ def showplaylist(request, plid):
     return HttpResponse('<h1>playlist id: %s </h1>' % plid)
 
 def playlists(request):
-    playlists = Playlist.objects.all()
-    return render(request, 'playlists.html', {'playlists': playlists})
+    playlst = Playlist.objects.all()
+    return render(request, 'playlists.html', {'playlists': playlst})
 
 def index(request):
     return render(request, 'index_new.html', {'portal_url': PORTAL_URL})
