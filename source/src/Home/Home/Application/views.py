@@ -6,6 +6,8 @@ from Home.settings import PORTAL_URL
 
 # Create your views here.
 
+def showplaylist(request, plid):
+    return HttpResponse('<h1>Playlist %s </h1>' % plid)
 
 def index(request):
     return render(request, 'index_new.html', {'portal_url': PORTAL_URL})
