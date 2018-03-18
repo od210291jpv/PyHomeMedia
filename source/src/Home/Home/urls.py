@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     # url(r'api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^playlist/(?P<plid>\d+/view/$)', 'Home.Application.views.showplaylist', name='showplaylist'),
+    url(r'^playlists/$', 'Home.Application.views.playlists', name='playlist'),
     url(r'^$', 'Home.Application.views.index', name='index'),
     url(r'^home/$', 'Home.Application.views.home', name='home'),
     url(r'^test/$', 'Home.Application.views.test', name='test')

@@ -1,13 +1,17 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render
 from django.http import HttpResponse
-from models import AudioFile
+from models import AudioFile, Playlist
 from Home.settings import PORTAL_URL
 
 # Create your views here.
 
 def showplaylist(request, plid):
-    return HttpResponse('<h1>Playlist %s </h1>' % plid)
+    return HttpResponse('<h1>playlist id: %s </h1>' % plid)
+
+def laylists(request):
+    playlists = Playlist.objects.all()
+    return render(request, 'playlists.html', {'playlists': playlists})
 
 def index(request):
     return render(request, 'index_new.html', {'portal_url': PORTAL_URL})
