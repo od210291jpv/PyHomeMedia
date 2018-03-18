@@ -9,7 +9,7 @@ from Home.settings import PORTAL_URL
 def showplaylist(request, plid):
     return HttpResponse('<h1>playlist id: %s </h1>' % plid)
 
-def laylists(request):
+def playlists(request):
     playlists = Playlist.objects.all()
     return render(request, 'playlists.html', {'playlists': playlists})
 
