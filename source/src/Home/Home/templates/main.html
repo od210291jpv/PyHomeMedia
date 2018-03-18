@@ -1,9 +1,7 @@
-{% extends 'index.html' %}
+{% extends 'index_new.html' %}
 {% load static from staticfiles %}
 
 {% block content %}
-	<div class="content_bg">
-			<div class="main_pic">
 				{% for track in tracks %}
 				<!--<a class="btn" href="#" > Track name 1</a>-->
 				<hr>
@@ -13,60 +11,5 @@
 					<source src="{{ track.path.url }}">
 				</audio>
 				</a>
-				<!--<a class="btn" > {{ track.name }}-->
-				<!--<audio controls>-->
-  					<!--<source src="{{ track.path.url }}", type="audio/mpeg">-->
-				<!--</audio>-->
-				<!--</a>-->
 			{% endfor %}
-			</div>
-		</div>
-
-		<section class="tabs">
-	            <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
-		        <label for="tab-1" class="tab-label-1">Info</label>
-
-	            <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
-		        <label for="tab-2" class="tab-label-2">Playlist</label>
-
-	            <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
-		        <label for="tab-3" class="tab-label-3">Library</label>
-
-			    <div class="clear-shadow"></div>
-		        <div class="content_tab">
-			        <div class="content-1">
-			        	<a class="tab_left">
-				        	<h2>Artist name</h2>
-							<h3>Music info</h3>
-						</a>
-						<a  class="tab_right">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-							<p class="top hide">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. </p>
-						</a>
-						<div class="clear"></div>
-					</div>
-			        <div class="content-2">
-			        	<a class="tab_left">
-				        	<h2>02. awards</h2>
-							<h3>a bit about our awards</h3>
-						</a>
-						<a  class="tab_right">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-							<p class="top hide">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. </p>
-						</a>
-						<div class="clear"></div>
-					</div>
-			        <div class="content-3">
-			        	<a class="tab_left">
-				        	<h2>03. philosophy</h2>
-							<h3>a bit our philosophy</h3>
-						</a>
-						<a  class="tab_right">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-							<p class="top hide">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. </p>
-						</a>
-						<div class="clear"></div>
-                    </div>
-		        </div>
-		 </section>
 {% endblock content %}
