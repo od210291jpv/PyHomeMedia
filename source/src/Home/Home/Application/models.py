@@ -10,14 +10,8 @@ class AudioFile(models.Model):
         verbose_name = u'Audio File'
         verbose_name_plural = u'Audio Files'
 
-    song_id = models.ManyToManyField('Playlist',
-        null=True,
-        blank=True,
-        verbose_name = u'Playlist'
-    )
-
     path = models.FileField(
-        upload_to = 'music',
+        upload_to='music',
         blank=False,
     )
 
@@ -69,6 +63,7 @@ class Playlist(models.Model):
 
     def __unicode__(self):
         return u'%s' % (self.name)
+
 
 class User():
     pass

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c1da4df0-cdea-4bcf-b484-b6b3a96aba8d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/src/Home/Home/urls.py" afterPath="$PROJECT_DIR$/source/src/Home/Home/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/src/Home/Home/Application/models.py" afterPath="$PROJECT_DIR$/source/src/Home/Home/Application/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/src/Home/Home/Application/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="353">
+              <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -82,7 +82,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/src/Home/Home/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -147,8 +147,8 @@
         <option value="$PROJECT_DIR$/source/src/Home/Home/static/css/main.css" />
         <option value="$PROJECT_DIR$/source/src/Home/Home/templates/index_new.html" />
         <option value="$PROJECT_DIR$/source/src/Home/Home/Application/views.py" />
-        <option value="$PROJECT_DIR$/source/src/Home/Home/Application/models.py" />
         <option value="$PROJECT_DIR$/source/src/Home/Home/urls.py" />
+        <option value="$PROJECT_DIR$/source/src/Home/Home/Application/models.py" />
       </list>
     </option>
   </component>
@@ -612,7 +612,8 @@
     <MESSAGE value="Links edited" />
     <MESSAGE value="Updated styles, modified tracklist" />
     <MESSAGE value="Added test view for pushing audio files, updated models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test view for pushing audio files, updated models" />
+    <MESSAGE value="Extended AudioFile model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extended AudioFile model" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1006,26 +1007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/src/Home/Home/Application/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/src/Home/Home/Application/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding>
-            <element signature="e#24#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/src/Home/Home/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-820">
@@ -1039,6 +1020,26 @@
         <state relative-caret-position="255">
           <caret line="25" column="72" lean-forward="false" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/src/Home/Home/Application/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding>
+            <element signature="e#24#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/src/Home/Home/Application/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
