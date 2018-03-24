@@ -10,6 +10,12 @@ class AudioFile(models.Model):
         verbose_name = u'Audio File'
         verbose_name_plural = u'Audio Files'
 
+    song_id = models.ManyToManyField('Playlist',
+        null=True,
+        blank=True,
+        verbose_name = u'songs'
+    )
+
     path = models.FileField(
         upload_to = 'music',
         blank=False,
@@ -55,7 +61,7 @@ class Playlist(models.Model):
         verbose_name=u'Playlist name'
         )
 
-    song = models.ManyToManyField('AudioFile',
+    song_id = models.ManyToManyField('AudioFile',
         null=True,
         blank=True,
         verbose_name=u'Songs'
