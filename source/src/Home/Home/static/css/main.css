@@ -16,22 +16,19 @@ padding-top: 10px;
 
 /*Social icons in footer*/
 #Instagram {
-padding-top: 5px;
-padding-bottom: 5px;
+margin: 5px;
 }
 
 #Twitter {
-padding-top: 5px;
-padding-bottom: 5px;
+margin: 5px;
 }
 
 #Facebook {
-padding-top: 5px;
-padding-bottom: 5px;
+margin: 5px;
 }
 
 /*Side navigation menu*/
 
 #navigation{
-padding-left: 5px;
+margin-left: 5px;
 }
