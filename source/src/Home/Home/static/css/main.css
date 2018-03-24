@@ -3,10 +3,6 @@ h1, h2, h3, h4, h5, h6 {
 font-weight: bold;
 }
 
-.alert {
-/* Ми додали відстань лише зверху елемента: -top */
-margin-top: 10px;
-}
 
 /* знайшли елемент футера по його унікальному ідентифікатору
 footer */
@@ -18,19 +14,24 @@ border-top: 1px solid #dddddd;
 padding-top: 10px;
 }
 
-/* Groups Selector */
-#group-selector {
-margin-top: 30px;
+/*Social icons in footer*/
+#Instagram {
+padding-top: 5px;
+padding-bottom: 5px;
 }
-#group-selector select {
-margin: 0;
-width: 85%;
-background-color: #ffffff;
-border: 1px solid #cccccc;
-height: 30px;
-line-height: 30px;
-color: #555555;
+
+#Twitter {
+padding-top: 5px;
+padding-bottom: 5px;
 }
-#month {
-text-align: center;
+
+#Facebook {
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+/*Side navigation menu*/
+
+#navigation{
+padding-left: 5px;
 }

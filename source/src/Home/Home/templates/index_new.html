@@ -11,16 +11,8 @@
 }
     </style>
 
-    <!--<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
-    <!--<style>-->
-   <!--@font-face {-->
-    <!--font-family: 'Roboto', sans-serif;-->
-    <!--src: url("https://fonts.googleapis.com/css?family=Roboto"); /* Путь к файлу со шрифтом */-->
-   <!--}-->
-   <!--h1 {-->
-    <!--font-family: 'Roboto', sans-serif;-->
-   <!--}-->
-  <!--</style>-->
+    <link rel="stylesheet" href='{{ PORTAL_URL }}{% static "css/main.css" %}'>
+
     <link rel="stylesheet" href="{{ PORTAL_URL }}{% static 'css/bootstrap.css' %}">
 </head>
 <body>
@@ -55,9 +47,7 @@
                 <div class="col-xs-12"><hr></div>
             </div>
             <div class="row">
-                <div class="col-xs-12">
-                    {% block content %}{% endblock content %}
-                </div>
+                {% block content %}{% endblock content %}
             </div>
         </div>
     </div>
@@ -73,9 +63,9 @@
             </div>
             <div class="col-xs-10">
                 <h4>Follow us at social:</h4>
-                <div><img src="{{ PORTAL_URL }}{% static 'images/Instagram.png' %}" width="25" height="25"><b><a href="http://instagram.com">Instagram</a></b></div>
-                <div><img src="{{ PORTAL_URL }}{% static 'images/Twitter.png' %}" width="25" height="25"><b><a href="http://twitter.com">Twitter</a></b></div>
-                <div><img src="{{ PORTAL_URL }}{% static 'images/Facebook.png' %}" width="25" height="25"><b><a href="http://facebook.com">Facebook</a></b></div>
+                <div><img src="{{ PORTAL_URL }}{% static 'images/Instagram.png' %}" width="25" height="25" id="Instagram"><b><a href="http://instagram.com">Instagram</a></b></div>
+                <div><img src="{{ PORTAL_URL }}{% static 'images/Twitter.png' %}" width="25" height="25" id="Twitter"><b><a href="http://twitter.com">Twitter</a></b></div>
+                <div><img src="{{ PORTAL_URL }}{% static 'images/Facebook.png' %}" width="25" height="25" id="Facebook"><b><a href="http://facebook.com">Facebook</a></b></div>
             </div>
 
         </div>
