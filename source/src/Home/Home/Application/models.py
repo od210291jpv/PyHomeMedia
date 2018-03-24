@@ -13,7 +13,7 @@ class AudioFile(models.Model):
     song_id = models.ManyToManyField('Playlist',
         null=True,
         blank=True,
-        verbose_name = u'songs'
+        verbose_name = u'Playlist'
     )
 
     path = models.FileField(
@@ -46,7 +46,7 @@ class AudioFile(models.Model):
     )
 
     def __unicode__(self):
-        return u'%s %s %s %s' % (self.path, self.name, self.author, self.likes)
+        return u'%s %s %s %s %s' % (self.path, self.name, self.author, self.likes, self.song_id)
 
 
 class Playlist(models.Model):
