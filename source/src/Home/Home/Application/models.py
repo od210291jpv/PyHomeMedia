@@ -59,7 +59,7 @@ class Playlist(models.Model):
         null=True,
         blank=True,
         through='PlayListRelations',
-        through_fields=('playlist', 'track'),
+        # through_fields=('playlist', 'track'),
         verbose_name=u'Songs',
         related_name=u'Playlists',
         related_query_name=u'playlist'
