@@ -58,11 +58,11 @@ class Playlist(models.Model):
     songs = models.ManyToManyField('AudioFile',
         null=True,
         blank=True,
-        through=u'PlayListRelations',
+        through='PlayListRelations',
         through_fields=('playlist', 'track'),
         verbose_name=u'Songs',
-        # related_name=u'Playlists',
-        # related_query_name=u'playlist'
+        related_name=u'Playlists',
+        related_query_name=u'playlist'
         )
 
     likes = models.IntegerField(
