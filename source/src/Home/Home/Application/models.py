@@ -61,8 +61,8 @@ class Playlist(models.Model):
         through=u'PlayListRelations',
         through_fields=('playlist', 'track'),
         verbose_name=u'Songs',
-        related_name=u'Playlists',
-        related_query_name=u'playlist'
+        # related_name=u'Playlists',
+        # related_query_name=u'playlist'
         )
 
     likes = models.IntegerField(
@@ -80,6 +80,6 @@ class PlaylistRelations(models.Model):
     playlist = models.ForeignKey(Playlist),
     track = models.ForeignKey(AudioFile)
 
-    # def __unicode__(self):
-    #     return u'%s %s' % (self.playlist, self.track)
+    def __unicode__(self):
+        return u'%s %s' % (self.playlist, self.track)
 
