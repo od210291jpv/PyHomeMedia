@@ -55,7 +55,7 @@ class Playlist(models.Model):
         verbose_name=u'Playlist name'
         )
 
-    songs = models.ForeginKey('AudioFile',
+    songs = models.ForeignKey('AudioFile',
         null=True,
         blank=True,
         verbose_name=u'Songs'
