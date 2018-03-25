@@ -60,7 +60,7 @@ class Playlist(models.Model):
         blank=True,
         verbose_name=u'Songs',
         related_name=u'Playlists',
-        related_querry_name=u'playlist'
+        # related_querry_name=u'playlist'
         )
 
     likes = models.IntegerField(
