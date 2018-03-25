@@ -58,8 +58,8 @@ class Playlist(models.Model):
     songs = models.ManyToManyField('AudioFile',
         null=True,
         blank=True,
-        through='PlayListRelations',
-        through_fields=('playlist', 'track'),
+        # through='PlayListRelations',
+        # through_fields=('playlist', 'track'),
         verbose_name=u'Songs',
         related_name=u'Playlists',
         related_query_name=u'playlist'
@@ -71,8 +71,8 @@ class Playlist(models.Model):
         default=0
     )
 
-    # def __unicode__(self):
-    #     return u'%s %s %s' % (self.name, self.songs, self.likes)
+    def __unicode__(self):
+        return u'%s %s %s' % (self.name, self.songs, self.likes)
 
 
 class PlaylistRelations(models.Model):
