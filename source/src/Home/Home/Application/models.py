@@ -77,7 +77,7 @@ class Playlist(models.Model):
 
 class PlayListRelations(models.Model):
 
-    playlist = models.ForeignKey(Playlist),
+    playlist = models.ForeignKey(Playlist)
     track = models.ForeignKey(AudioFile)
 
     def __unicode__(self):
