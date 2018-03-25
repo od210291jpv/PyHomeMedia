@@ -80,6 +80,6 @@ class PlaylistRelations(models.Model):
     playlist = models.ForeignKey(Playlist),
     track = models.ForeignKey(AudioFile)
 
-    def __unicode__(self):
-        return u'%s %s' % (self.playlist, self.track)
+    # def __unicode__(self):
+    #     return u'%s %s' % (self.playlist, self.track)
 
