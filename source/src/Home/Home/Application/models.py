@@ -10,7 +10,7 @@ class AudioFile(models.Model):
         verbose_name = u'Audio File'
         verbose_name_plural = u'Audio Files'
 
-    playlist = models.ForeignKey('Playlist',
+    playlist = models.ManyToManyField('Playlist',
         null=True,
         blank=True,
         verbose_name=u'Playlist'
@@ -68,7 +68,7 @@ class Playlist(models.Model):
     #                                   )
 
     def __unicode__(self):
-        return u'%s %s' % (self.name)
+        return u'%s' % (self.name)
 
 
 class User():
