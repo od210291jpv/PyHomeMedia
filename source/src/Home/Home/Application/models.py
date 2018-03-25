@@ -10,12 +10,6 @@ class AudioFile(models.Model):
         verbose_name = u'Audio File'
         verbose_name_plural = u'Audio Files'
 
-    playlist = models.ManyToManyField('Playlist',
-        null=True,
-        blank=True,
-        verbose_name=u'Playlist'
-    )
-
     path = models.FileField(
         upload_to='music',
         blank=False,
@@ -46,7 +40,7 @@ class AudioFile(models.Model):
     )
 
     def __unicode__(self):
-        return u'%s %s %s %s %s' % (self.path, self.name, self.author, self.likes, self.playlist)
+        return u'%s %s %s %s' % (self.path, self.name, self.author, self.likes)
 
 
 class Playlist(models.Model):
@@ -61,14 +55,22 @@ class Playlist(models.Model):
         verbose_name=u'Playlist name'
         )
 
-    # # songs = models.ForeignKey('AudioFile',
-    # #     null=True,
-    # #     blank=True,
-    # #     verbose_name=u'Songs'
-    #                                   )
+    songs = models.ForeignKey('AudioFile',
+        null=True,
+        blank=True,
+        verbose_name=u'Songs',
+        related_name=u'Playlists',
+        related_querry_name=u'playlist'
+        )
+
+    likes = models.IntegerField(
+        blank=False,
+        verbose_name=u'Likes amount',
+        default=0
+    )
 
     def __unicode__(self):
-        return u'%s' % (self.name)
+        return u'%s %s %s' % (self.name, self.songs, self.likes)
 
 
 class User():
