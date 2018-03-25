@@ -40,7 +40,7 @@ class AudioFile(models.Model):
     )
 
     def __unicode__(self):
-        return u'%s %s %s %s %s' % (self.path, self.name, self.author, self.likes, self.song_id)
+        return u'%s %s %s %s' % (self.path, self.name, self.author, self.likes)
 
 
 class Playlist(models.Model):
