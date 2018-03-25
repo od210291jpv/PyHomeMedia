@@ -55,7 +55,7 @@ class Playlist(models.Model):
         verbose_name=u'Playlist name'
         )
 
-    songs = models.ManyToManyField('AudioFile',
+    songs = models.ForeginKey('AudioFile',
         null=True,
         blank=True,
         verbose_name=u'Songs'
