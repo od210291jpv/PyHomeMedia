@@ -62,7 +62,7 @@ class Playlist(models.Model):
                                       )
 
     def __unicode__(self):
-        return u'%s' % (self.name)
+        return u'%s %s' % (self.name, self.songs)
 
 
 class User():
