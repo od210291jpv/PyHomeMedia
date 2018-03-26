@@ -7,3 +7,4 @@ from .models import PlayListRelations
 admin.site.register(AudioFile)
 admin.site.register(Playlist)
 admin.site.register(PlayListRelations)
+
