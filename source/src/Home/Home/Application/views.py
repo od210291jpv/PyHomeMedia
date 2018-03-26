@@ -8,7 +8,8 @@ from Home.settings import PORTAL_URL
 
 
 def show_playlist(request, plid):
-    playlist_tracks = PlayListRelations.objects.all().filter(playlist_id=plid)
+    # playlist_tracks = PlayListRelations.objects.all().filter(playlist_id=plid)
+    playlist_tracks = PlayListRelations.objects.raw('select * from application_playlistrelations join application_audiofile on application_playlistrelations.track_id = application_audiofile.id where application_playlistrelations.playlist_id = 1;')
     return render(request, 'playlist_tracks.html', {'playlist_tracks': playlist_tracks})
 
 
