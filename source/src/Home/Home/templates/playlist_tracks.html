@@ -2,7 +2,7 @@
 {% load static from staticfiles %}
     {% block content %}
         {% for track in playlist_tracks %}
-                <h2>{{ track }}</h2>
+                <h2>{{ track.path.url }}</h2>
             <!--<h1>{{track.name}}</h1>-->
             <!--<h2>{{ track.path.url }}</h2>-->
             <!--<audio controls>-->
