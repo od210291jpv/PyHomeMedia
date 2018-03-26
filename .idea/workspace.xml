@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1da4df0-cdea-4bcf-b484-b6b3a96aba8d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/src/Home/Home/Application/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/src/Home/Home/Application/migrations/0002_auto_20170127_1350.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/src/Home/Home/Application/migrations/0003_auto_20170127_1552.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/src/Home/Home/Application/migrations/0004_auto_20170127_1618.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/src/Home/Home/Application/admin.py" afterPath="$PROJECT_DIR$/source/src/Home/Home/Application/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/src/Home/Home/Application/models.py" afterPath="$PROJECT_DIR$/source/src/Home/Home/Application/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +23,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/src/Home/Home/Application/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="61" column="10" lean-forward="false" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
+            <state relative-caret-position="374">
+              <caret line="79" column="12" lean-forward="false" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -50,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/src/Home/Home/Application/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -151,7 +156,6 @@
         <option value="$USER_HOME$/Documents/bootstrap/Index.html" />
         <option value="$PROJECT_DIR$/source/src/Home/Home/templates/index.html" />
         <option value="$PROJECT_DIR$/source/src/Home/Home/templates/playlists.html" />
-        <option value="$PROJECT_DIR$/source/src/Home/Home/Application/admin.py" />
         <option value="$PROJECT_DIR$/source/src/Home/Home/templates/main.html" />
         <option value="$PROJECT_DIR$/source/src/Home/Home/static/css/main.css" />
         <option value="$PROJECT_DIR$/source/src/Home/Home/templates/index_new.html" />
@@ -160,6 +164,7 @@
         <option value="$PROJECT_DIR$/source/src/Home/Home/settings.py" />
         <option value="$PROJECT_DIR$/source/src/Home/Home/Application/my.cnf" />
         <option value="$PROJECT_DIR$/source/src/Home/Home/Application/models.py" />
+        <option value="$PROJECT_DIR$/source/src/Home/Home/Application/admin.py" />
       </list>
     </option>
   </component>
@@ -871,16 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/src/Home/Home/Application/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/src/Home/Home/templates/playlists.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -949,10 +944,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/src/Home/Home/Application/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="61" column="10" lean-forward="false" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
+        <state relative-caret-position="374">
+          <caret line="79" column="12" lean-forward="false" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/src/Home/Home/Application/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
