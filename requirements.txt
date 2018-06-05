@@ -1,0 +1,2 @@
+pysql
+django==1.10.0

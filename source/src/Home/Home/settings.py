@@ -85,7 +85,7 @@ DATABASES = {
         'NAME': 'media',
         'USER': 'user',
         'PASSWORD': 'Password',
-        'HOST': '192.168.0.103',
+        'HOST': 'localhost',
         'PORT': '3306'
     }
 }
