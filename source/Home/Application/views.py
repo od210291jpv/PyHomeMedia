@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render
 from django.http import HttpResponse
-from models import AudioFile, Playlist, PlayListRelations
+from models import AudioFile, Playlist
 from Home.settings import PORTAL_URL
 
 # Create your views here.
 
 
 def show_playlist(request, plid):
-    # playlist_tracks = PlayListRelations.objects.all().filter(playlist_id=plid)
-    playlist_tracks = PlayListRelations.objects.raw('select * from application_playlistrelations join application_audiofile on application_playlistrelations.track_id = application_audiofile.id where application_playlistrelations.playlist_id = 1;')
+    playlist_tracks = AudioFile.objects.filter(playlist=plid)
     return render(request, 'playlist_tracks.html', {'playlist_tracks': playlist_tracks})
 
 
