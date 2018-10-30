@@ -39,8 +39,15 @@ class AudioFile(models.Model):
         default=0
     )
 
+    playlist = models.ManyToManyField(
+        'Playlist',
+        blank=True,
+        verbose_name=u'Playlist',
+        deafult=None
+    )
+
     def __unicode__(self):
-        return u'%s %s %s %s' % (self.path, self.name, self.author, self.likes)
+        return u'%s %s %s %s %s' % (self.path, self.name, self.author, self.likes, self.playlist)
 
 
 class Playlist(models.Model):
@@ -55,16 +62,6 @@ class Playlist(models.Model):
         verbose_name=u'Playlist name'
         )
 
-    songs = models.ManyToManyField('AudioFile',
-        null=True,
-        blank=True,
-        through='PlayListRelations',
-        through_fields=('playlist', 'track'),
-        verbose_name=u'Songs',
-        related_name=u'Playlists',
-        related_query_name=u'playlist'
-        )
-
     likes = models.IntegerField(
         blank=False,
         verbose_name=u'Likes amount',
@@ -74,12 +71,4 @@ class Playlist(models.Model):
     def __unicode__(self):
         return u'%s %s %s' % (self.name, self.songs, self.likes)
 
-
-class PlayListRelations(models.Model):
-
-    playlist = models.ForeignKey(Playlist)
-    track = models.ForeignKey(AudioFile)
-
-    def __unicode__(self):
-        return u'%s %s' % (self.playlist, self.track)
 
