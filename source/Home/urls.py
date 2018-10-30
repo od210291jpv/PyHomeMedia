@@ -18,16 +18,17 @@ from django.contrib import admin
 from .settings import MEDIA_ROOT, DEBUG, MEDIA_URL
 from django.conf import settings
 from django.conf.urls.static import static
+from Application.views import *
 
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     # url(r'api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    url(r'^playlist/(?P<plid>\d+)/view/$', 'Home.Application.views.show_playlist', name='show_playlist'),
-    url(r'^playlists/$', 'Home.Application.views.playlists', name='playlist'),
-    url(r'^$', 'Home.Application.views.index', name='index'),
-    url(r'^home/$', 'Home.Application.views.home', name='home'),
-    url(r'^test/$', 'Home.Application.views.test', name='test')
+    url(r'^playlist/(?P<plid>\d+)/view/$', show_playlist, name='show_playlist'),
+    url(r'^playlists/$', playlists, name='playlist'),
+    url(r'^$', index, name='index'),
+    url(r'^home/$', home, name='home'),
+    url(r'^test/$', test, name='test')
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

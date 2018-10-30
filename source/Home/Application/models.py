@@ -43,7 +43,6 @@ class AudioFile(models.Model):
         'Playlist',
         blank=True,
         verbose_name=u'Playlist',
-        deafult=None
     )
 
     def __unicode__(self):
