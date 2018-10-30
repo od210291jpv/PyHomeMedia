@@ -1,0 +1,9 @@
+{% extends 'index_new.html' %}
+{% load static from staticfiles %}
+
+{% block content %}
+            {% for playlist in playlists %}
+                <a href='{{ PORTAL_URL }}/playlist/{{playlist.id}}/view'><b>{{ playlist.name }}</b></a>
+                <hr>
+			{% endfor %}
+{% endblock content %}

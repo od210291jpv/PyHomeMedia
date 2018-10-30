@@ -1,0 +1,23 @@
+{% extends 'index_new.html' %}
+{% load static from staticfiles %}
+
+{% block content %}
+				{% for track in tracks %}
+				<div class="col-xs-4">
+					<a href="#"><b>{{ track.name }}</b></a>
+				</div>
+				<div>
+					<audio controls="controls">
+						<source src="{{ track.path.url }}">
+					</audio>
+					<span>
+						<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+							<b>Button</b>
+							<span class="caret">
+
+							</span>
+						</a></span>
+				</div>
+
+			{% endfor %}
+{% endblock content %}

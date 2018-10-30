@@ -1,0 +1,12 @@
+{% extends 'index_new.html' %}
+{% load static from staticfiles %}
+    {% block content %}
+        {% for track in playlist_tracks %}
+                <h2>{{ track.path.url }}</h2>
+            <!--<h1>{{track.name}}</h1>-->
+            <!--<h2>{{ track.path.url }}</h2>-->
+            <!--<audio controls>-->
+                <!--<source src="{{ track.path.url }}">-->
+            <!--</audio>-->
+        {% endfor %}
+    {% endblock content %}
